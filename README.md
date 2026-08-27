@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LMS Cloud Frontend Application
 
-## Getting Started
+## 👤 Student Metadata
 
-First, run the development server:
+* **Student Name:** M. Chamindu Chirantha
+* **Student ID:** [241711027]
+* **GCP Project ID:** [project-5cb0d26c-1f1d-4c90-862]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 Project Description
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The **LMS Cloud Frontend** is a modern web application built using Next.js App Router for the Library Management System. It provides intuitive dashboards and interfaces for both Librarians and standard Users, enabling real-time book borrowing, user management, and seamless microservice interaction through the cloud gateway.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚡ Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+* **Framework:** Next.js (App Router)
+* **Library:** React 19
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS v4, PostCSS
+* **Linting & Code Quality:** ESLint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+cloud-frontend/
+├── public/                 # Static assets
+├── src/
+│   └── app/                # Next.js App Router Directory
+│       ├── dashboard/      # Role-based Dashboard routes
+│       │   ├── librarian/  # Librarian control panel view (`page.tsx`)
+│       │   └── user/       # Member dashboard view (`page.tsx`)
+│       ├── login/          # User authentication page (`page.tsx`)
+│       ├── register/       # User registration page (`page.tsx`)
+│       ├── globals.css     # Global styles & Tailwind directives
+│       ├── layout.tsx      # Root layout wrapper
+│       └── page.tsx        # Home / Landing page
+├── next.config.ts          # Next.js configuration
+├── postcss.config.mjs      # PostCSS configuration for Tailwind
+├── tsconfig.json           # TypeScript configuration
+└── package.json            # Dependencies and scripts registry
