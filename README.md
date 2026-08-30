@@ -5,6 +5,7 @@
 * **Student Name:** M. Chamindu Chirantha
 * **Student ID:** [241711027]
 * **GCP Project ID:** [project-5cb0d26c-1f1d-4c90-862]
+* **Frontend Url:**(http://35.247.135.247/)
 
 ---
 
